@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "git@github.com:smao999/loadsh-test.git",
   "author": "夏青松 <qs.xia@yunding360.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }

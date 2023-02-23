@@ -1,4 +1,4 @@
-import _ from 'lodash'
+// import _ from 'lodash'
 // https://github1s.com/lodash/lodash/blob/HEAD/chunk.js
 
 // chunk
@@ -18,4 +18,13 @@ function _chunk(arr, value){
 
 let arr1 = [1,2,3,4,5]
 let c = _chunk(arr1,1)
-console.log(c);
+// console.log(c);
+
+function chunk (arr, size = 1) {
+  let result = []
+  for (let i = 0; i < arr.length; i += size) {
+    result.push(arr.slice(i, i + size))
+  }
+  return result
+}
+console.log(chunk(arr1, 2));
